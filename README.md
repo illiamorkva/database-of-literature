@@ -1,8 +1,8 @@
 # database-of-literature
 
-## A web research application.
+### A web research application.
 
-### Project information
+## Project information
 
 University: National Aerospace University "KhAI".
 Chair: Radiotechnical Systems of Aircraft.
