@@ -1,0 +1,202 @@
+<link rel="stylesheet" type="text/css" href="/src/assets/css/scopusmasterlayout.css">
+
+
+<div class="row">
+  <div class="col-md-12">
+    <header>
+      <h1 class="documentHeader"> Author search
+        <ul class="list-inline">
+          <li>
+            <a class="btn-link" href="../source/eval/handle.uri@navbar=t&amp;origin=searchauthorlookup&amp;zone=topnavbar" title="Compare sources based on citation metrics."
+              target="_top"><span class="anchorText">Compare sources</span>
+              <span class="ico-navigate-right" aria-hidden="true"></span></a>
+          </li>
+        </ul>
+      </h1>
+    </header>
+  </div>
+</div>
+<div class="row">
+  <div id="contentWrapper" class="col-md-12">
+    <div id="alertArea" aria-live="polite" aria-atomic="true">
+    </div>
+    <div id="container">
+      <a name="skip1" id="skip1" href="#"></a>
+      <div id="searchSection">
+        <div id="errorContainer">
+        </div>
+        <div class="contentSection">
+          <div class="marketingTextZone">
+            <div class="alert alert-info">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+              <p>
+              </p>
+              <div id="authorTextZoneDivHolder">
+                <div style="padding: 16px 10px;">
+                  <div class="contentPadding txtSmaller">
+                    To determine which author names should be grouped together under a single identifier number, the Scopus Author Identifier
+                    uses an algorithm that matches author names based on their affiliation, address, subject area, source
+                    title, dates of publication, citations, and co-authors. Documents with insufficient data may not be matched,
+                    this can lead to more than one entry in the results list for the same author. By default, only details
+                    pages matched to more than one document in Scopus are shown in search results.&nbsp;&nbsp;<a
+                      title="More Information (Opens in new window)" target="_new" href="../standard/help.url@topic=2845">About Scopus Author
+										Identifier</a>
+                  </div>
+                </div>
+              </div>
+              <p></p>
+            </div>
+          </div>
+          <div class="formContentSection">
+            <script type="text/javascript">
+              var allowAffilProfiling = true;
+            </script>
+            <form id="authorLookupSearchForm" name="AuthorLookupResultsForm" action="/project/page02" method="post">
+              <input type="hidden" name="origin" value="searchauthorlookup">
+              <input id="src" name="src" type="hidden" value="al">
+              <input id="edit" name="edit" type="hidden" value="">
+              <input id="poppUp" name="poppUp" type="hidden" value="">
+              <div class="row wrapper">
+                <div class="col-md-12">
+                  <ul id="internalTabs" class="nav nav-pills">
+                    <li><a href="/project/page01">Documents</a></li>
+                    <li class="active"><a href="/project/page02">Authors</a></li>
+                    <li><a href="/project/page03">Affiliations</a></li>
+                    <li><a href="/project/page04">Advanced</a></li>
+                    <li class="helperLink">
+                      <a href="../standard/help.uri@topic=2328" target="globalHelp" onclick="return openGlobalhelp('../standard/help.uri@topic=2328','globalHelp',760,570,0)"
+                        title="Search tips (Opens in a new window)">
+                        <span class="btnText">Search tips</span>
+                        <span class="ico-help-icon fontLarge" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                  </ul>
+                  <input type="hidden" name="basicTab" value="" alt="Select to search for documents.">
+                  <input type="hidden" name="affiliationTab" value="" alt="Select to search for affiliations.">
+                  <input type="hidden" name="advancedTab" value="" alt="Select to perform advanced queries.">
+                  <div class="row formRow">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="formControls"> 
+													<label for="authorLastName" class="inputTextLabel">Author last name</label>
+													<input type="text" name="st1" id="lastname" size="45" maxlength="200" value="">
+													<button type="button" class="btn btn-link clearButton hidden">
+														<span class="sr-only">Clear Field</span>
+                        <span class="ico-delete fontLarge" aria-hidden="true"></span>
+                        </button>
+                        </span>
+                        <span class="help-block">e.g. Smith</span>
+                        <span id="error-lastname" class="errorNote hidden">No last name was entered. Enter a last name and click search.</span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="formControls"> 
+													<label for="authorFirstName" class="inputTextLabel">Author first name</label>
+													<input type="text" name="st2" value="" id="firstname" size="40" maxlength="200">
+													<button type="button" class="btn btn-link clearButton hidden">
+														<span class="sr-only">Clear Field</span>
+                        <span class="ico-delete fontLarge" aria-hidden="true"></span>
+                        </button>
+                        </span>
+                        <span class="help-block">e.g. J.L.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="formControls"> 
+													<label for="affiliationSearch" class="inputTextLabel">Affiliation</label>
+													<input type="text" name="institute" id="institute" size="45" maxlength="200" value="">
+													<button type="button" class="btn btn-link clearButton hidden">
+														<span class="sr-only">Clear Field</span>
+                        <span class="ico-delete fontLarge" aria-hidden="true"></span>
+                        </button>
+                        </span>
+                        <span class="help-block">e.g. University of Toronto</span>
+                      </div>
+                    </div>
+                    <div class="col-md-4 paddingT1">
+                      <input type="checkbox" id="exactSearch" value="on">
+                      <label id="exactSearchCheck" for="exactSearch" class="checkbox-label">Show exact matches only</label>
+                    </div>
+                    <div class="col-md-2">
+                      <button id="authorMainSearch" type="submit" class="btn btn-primary pull-right" onclick="checkAuthOrOrcid(this.form.name);">
+												<span class="btnText authorSearch">Search</span> 
+												<span class="ico-search" aria-hidden="true"></span>
+											</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                                                                                                              if (typeof prs != "undefined") { prs.rt("pcr"); }
+              </script>
+              <div class="row wrapper verticalAlign">
+                <div class="col-md-12">
+                  <div class="row searchRow">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <span class="formControls"> 
+													<label for="orcidSearch" class="inputTextLabel"> 
+														<span class="pngIcon">
+															<img src="data:image/png;base64,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">
+														</span>
+                        <span class="labelText">ORCID</span>
+                        </label>
+                        <input type="text" name="orcidId" id="orcidId" onkeypress="setCheckEmpty(true,event,'lookup',this.form.name);" size="45"
+                          maxlength="200" value="">
+                          <button type="button" class="btn btn-link clearButton hidden">
+														<span class="sr-only">Clear Field</span>
+														<span class="ico-delete fontLarge" aria-hidden="true"></span>
+													</button>
+                          </span>
+                          <span class="help-block">e.g. 1111-2222-3333-444x</span>
+                          <span id="error-orcidId" class="errorNote hidden"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <button id="authorORCIDSearch" type="submit" title="Search for an author's ORCID ID" class="btn btn-primary" onclick="setCheckOrcidEmpty(true);checkTheForm(this.form.name);">
+												<span class="btnText">Search</span>
+												<span class="ico-search" aria-hidden="true"></span>
+											</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input id="subArea-1" name="authSubject" class="hidden" type="checkbox" value="LFSC" checked="checked"><input
+                type="hidden" name="_authSubject" value="on">
+              <input id="subArea-2" name="authSubject" class="hidden" type="checkbox" value="HLSC" checked="checked"><input
+                type="hidden" name="_authSubject" value="on">
+              <input id="subArea-3" name="authSubject" class="hidden" type="checkbox" value="PHSC" checked="checked"><input
+                type="hidden" name="_authSubject" value="on">
+              <input id="subArea-4" name="authSubject" class="hidden" type="checkbox" value="SOSC" checked="checked"><input
+                type="hidden" name="_authSubject" value="on">
+              <input type="hidden" name="s" value="">
+              <input type="hidden" name="sdt" value="al">
+              <input type="hidden" name="sot" value="al">
+              <input type="hidden" name="searchId" id="searchId" value="AB427695AFC87AA5B2CF806100D768B3.wsnAw8kcdt7IPYLO0V48gA:150">
+              <input type="hidden" name="exactSearch" value="off">
+              <input id="sid" name="sid" value="AB427695AFC87AA5B2CF806100D768B3.wsnAw8kcdt7IPYLO0V48gA:150" type="hidden">
+            </form>
+          </div>
+        </div>
+        <div id="scopusPartnerBubble" class="row hide">
+          <a href="../ucd/usability.uri" class="learnMore" onclick="logUsage('../ucd/usability.uri','ResourceLink','Resources')" title="Learn more about how to improve Scopus ">
+            <span class="learnMoreText">Learn more about how to </span>
+            <span class="improveScopusText">Improve Scopus</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<script src="/src/assets/js/jawr_loader.js"></script>
+<script src="/src/assets/js/masterjquery.js"></script>
+<script src="/src/assets/js/remoteaccmsg.js"></script>
+<script src="/src/assets/js/basicsearchtop.js"></script>
+<script src="/src/assets/js/sitecatalysttop.js"></script>
+<script src="/src/assets/js/scopusmasterjs.js"></script>
+<script src="/src/assets/js/basicsearchbottom.js"></script>
