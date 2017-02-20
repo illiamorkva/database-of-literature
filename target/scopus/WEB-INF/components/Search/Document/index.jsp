@@ -1,3 +1,4 @@
+<jsp:include page="../../common/header.jsp"/>
 <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/scopusmasterlayout.css">
 
 <div class="row">
@@ -330,3 +331,4 @@
 <script src="${contextPath}/resources/js/sitecatalysttop.js"></script>
 <script src="${contextPath}/resources/js/scopusmasterjs.js"></script>
 <script src="${contextPath}/resources/js/basicsearchbottom.js"></script>
+<jsp:include page="../../common/footer.jsp"/>

@@ -8,25 +8,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class SearchController
 {
-    //Get search document Page
-    @RequestMapping(value ="document/search",method = RequestMethod.GET)
-    public String documentSearch(ModelMap model)
+
+    @RequestMapping(value ="search/advanced",method = RequestMethod.GET)
+    public String searchAdvanced(ModelMap model)
     {
-        return "documentSearchPage";
+        return "Search/Advanced/index";
     }
 
-    //Get search author Page
-    @RequestMapping(value ="author/search",method = RequestMethod.GET)
-    public String authorSearch(ModelMap model)
+    @RequestMapping(value ="search/affiliation",method = RequestMethod.GET)
+    public String serachAffiliation(ModelMap model)
     {
-        return "authorSearchPage";
+        return "Search/Affiliation/index";
     }
 
-
-    //Get search affiliation Page
-    @RequestMapping(value ="affiliation/search",method = RequestMethod.GET)
-    public String affiliationSearch(ModelMap model)
+    @RequestMapping(value ="search/author",method = RequestMethod.GET)
+    public String searchAuthor(ModelMap model)
     {
-        return "affiliationSearchPage";
+        return "Search/Author/index";
+    }
+
+    @RequestMapping(value ="search/document",method = RequestMethod.GET)
+    public String searchDocument(ModelMap model)
+    {
+        return "Search/Document/index";
     }
 }

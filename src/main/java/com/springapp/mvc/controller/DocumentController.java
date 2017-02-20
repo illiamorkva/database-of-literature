@@ -10,8 +10,16 @@ public class DocumentController {
 
     //Get search document Page
     @RequestMapping(value ="document/details",method = RequestMethod.GET)
+    public String documentDetails(ModelMap model)
+    {
+        return "Document/Details/index";
+    }
+
+
+    @RequestMapping(value ="document/search-result",method = RequestMethod.GET)
     public String documentSearch(ModelMap model)
     {
-        return "Search/Document/index";
+        return "Document/SearchResults/index";
     }
+
 }

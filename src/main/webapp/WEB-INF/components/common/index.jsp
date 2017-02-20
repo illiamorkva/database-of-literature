@@ -1,4 +1,4 @@
-        <!--<java-content>-->
+<jsp:include page="header.jsp"/>
         <div class="headerToolbar ">
           <h1 class="pull-left"> Output: Print, e-mail or create a bibliography</h1>
         </div>
@@ -1281,15 +1281,14 @@
             </script>
           </div>
         </div>
-        <script src="./js/basicsearchbottom.js"></script>
-        <script src="./js/sitecatalysttop.js"></script>
-        <script src="./js/outputpagepagebottom.js"></script>
-        <script src="./js/remoteaccmsg.js"></script>
-        <script src="./js/bookmarklet.js"></script>
-        <script src="./js/jawr_loader.js"></script>
-        <script src="./js/277918141.js"></script>
-        <script src="./js/geo2.js"></script>
-        <script src="./js/citationexport.js"></script>
-        <script src="./js/outputpagepagetop.js"></script>
-        <!---->
-        
+     <!--   <script src="resources/js/basicsearchbottom.js"></script>
+        <script src="resources/js/sitecatalysttop.js"></script>
+        <script src="resources/js/outputpagepagebottom.js"></script>
+        <script src="resources/js/remoteaccmsg.js"></script>
+        <script src="resources/js/bookmarklet.js"></script>
+        <script src="resources/js/jawr_loader.js"></script>
+        <script src="/resources/js/277918141.js"></script>
+        <script src="/resources/js/geo2.js"></script>
+        <script src="/resources/js/citationexport.js"></script>
+        <script src="/resources/js/outputpagepagetop.js"></script>-->
+<jsp:include page="footer.jsp"/>
