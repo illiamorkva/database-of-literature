@@ -12,6 +12,6 @@ public class DocumentController {
     @RequestMapping(value ="document/details",method = RequestMethod.GET)
     public String documentSearch(ModelMap model)
     {
-        return "documentDetailsPage";
+        return "Search/Document/index";
     }
 }

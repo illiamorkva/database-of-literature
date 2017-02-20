@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../../common/css/scopusmasterlayout.css">
+<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/scopusmasterlayout.css">
 
 <div class="row">
   <div id="contentWrapper" class="col-md-12">
@@ -323,10 +323,10 @@
   </div>
   <div class="clear"></div>
 </div>
-<script src="../../common/js/jawr_loader.js"></script>
-<script src="../../common/js/masterjquery.js"></script>
-<script src="../../common/js/remoteaccmsg.js"></script>
-<script src="../../common/js/basicsearchtop.js"></script>
-<script src="../../common/js/sitecatalysttop.js"></script>
-<script src="../../common/js/scopusmasterjs.js"></script>
-<script src="../../common/js/basicsearchbottom.js"></script>
+<script src="${contextPath}/resources/js/jawr_loader.js"></script>
+<script src="${contextPath}/resources/js/masterjquery.js"></script>
+<script src="${contextPath}/resources/js/remoteaccmsg.js"></script>
+<script src="${contextPath}/resources/js/basicsearchtop.js"></script>
+<script src="${contextPath}/resources/js/sitecatalysttop.js"></script>
+<script src="${contextPath}/resources/js/scopusmasterjs.js"></script>
+<script src="${contextPath}/resources/js/basicsearchbottom.js"></script>

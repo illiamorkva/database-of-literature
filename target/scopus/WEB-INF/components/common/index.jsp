@@ -13,48 +13,48 @@
 
   <link rel="SHORTCUT ICON">
 
-  <link rel="stylesheet" type="text/css" href="./css/responsivelayoutstyle.css">
-  <link rel="stylesheet" type="text/css" href="./css/allcss.css">
-  <link rel="stylesheet" type="text/css" href="./css/authorsearch.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/responsivelayoutstyle.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/allcss.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/authorsearch.css">
 
-  <link rel="stylesheet" type="text/css" href="./css/bootstrapstyle.css">
-  <link rel="stylesheet" type="text/css" href="./css/browsesource.css">
-  <link rel="stylesheet" type="text/css" href="./css/documentdetails.css">
-  <link rel="stylesheet" type="text/css" href="./css/elsevier_iframe.css">
-  <link rel="stylesheet" type="text/css" href="./css/mylists.css">
-  <link rel="stylesheet" type="text/css" href="./css/outputpage.css">
-  <link rel="stylesheet" type="text/css" href="./css/rn_elsevier_iframe.themes.product_8150.site.css">
-  <link rel="stylesheet" type="text/css" href="./css/scopusmasterlayout.css">
-  <link rel="stylesheet" type="text/css" href="./css/treeview-menu.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/bootstrapstyle.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/browsesource.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/documentdetails.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/elsevier_iframe.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/mylists.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/outputpage.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/rn_elsevier_iframe.themes.product_8150.site.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/scopusmasterlayout.css">
+  <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/treeview-menu.css">
   <style>
     #modalOverlay-dialog {
       display: none !important
     }
-    
+
     .ui-widget-overlay {
       display: none !important;
     }
-    
+
     .helperLink,
     .marketingTextZone,
     .list-inline {
       display: none !important;
     }
-    
+
     #limitDocSearch {
       display: none !important
     }
-    
+
     #contentWrapper {
       padding-bottom: 0 !important
     }
-    
+
     #contentContainer {
       color: transparent;
     }
   </style>
-  <script src="./js/jquery.js"></script>
-  <script src="./js/masterjquery.js"></script>
+  <script src="${contextPath}/resources/js/jquery.js"></script>
+  <script src="${contextPath}/resources/js/masterjquery.js"></script>
   <title>
     Scopus
   </title>
@@ -120,7 +120,7 @@
                               <a role="menuitem" return openGlobalhelp(&#39;../standard/tutorial.uri@zone=topnavbar&amp;origin=searchauthorlookup&amp;module=3701&#39;,
                                 &#39;globalHelp&#39;,760,570,0) " title="Select to view tutorials (opens in a new window) ">Tutorials</a>
 															</li>
-															<li> <a >Live Chat</a></li> 
+															<li> <a >Live Chat</a></li>
 															<li role="presentation ">
 																<a role="menuitem " return openGlobalhelp(&#39;../standard/contactform.uri@zone=topnavbar&amp;origin=searchauthorlookup&#39;,
 																&#39;globalHelp&#39;,760,570,0)">Contact us</a>
@@ -199,7 +199,7 @@
 					</li>-->
                   <li>
                     <button type="button" class="btn btn-lg btn-link" id="spineToggle">
-							<span class="btnText"></span> 
+							<span class="btnText"></span>
 							<span class="sr-only">
 								Expand navigation/Collapse navigation
 							</span>
