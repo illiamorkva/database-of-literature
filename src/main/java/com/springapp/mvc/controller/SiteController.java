@@ -11,7 +11,7 @@ public class SiteController {
     @RequestMapping(value="/",method = RequestMethod.GET)
     public String printMainPage(ModelMap model) {
         model.addAttribute("message", "Scopus Main Page");
-        return "Main/main";
+        return "common/index";
     }
 
     @RequestMapping(value="/contactUs",method = RequestMethod.GET)
